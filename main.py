@@ -24,5 +24,7 @@ def menu_button(category_name):
     st.write(current_menu)
 
 with tab1: menu_button("식사류")
+with tab2: menu_button("안주류")
+with tab3: menu_button("음료/주류")
 
 # 결제

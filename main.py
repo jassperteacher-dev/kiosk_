@@ -26,6 +26,8 @@ def menu_button(category_name):
     for name, price in current_menu.items():
         st.write(name,price)
 
+    st.button("담기")
+
 
 with tab1: menu_button("식사류")
 with tab2: menu_button("안주류")

@@ -26,7 +26,8 @@ def menu_button(category_name):
     for name, price in current_menu.items():
         st.write(name)
         st.write(f"{price} 원")
-        st.button("담기")
+        if st.button("담기", key=name):
+            st.write(f"{name} 장바구니 담기")
 
     
 

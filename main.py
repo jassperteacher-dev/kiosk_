@@ -13,7 +13,7 @@ if cart not in st.session_state:
   st.session_state['cart'] = []
 
 # 화면 레이아웃
-col_menu, col_cart = columns([0.7,0.3])
+col_menu, col_cart = st.columns([0.7,0.3])
 
 with col_menu :
     tab1, tab2, tab3 = st.tabs["식사류","안주류","음료/주류"]
